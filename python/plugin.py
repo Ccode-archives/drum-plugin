@@ -18,4 +18,7 @@ try:
     else:
         print("try using -h")
 except:
-    print("error")
+    if len(args) == 0:
+        print("use one argument")
+    elif len(args) > 1:
+        print("pleases use only one argument")
