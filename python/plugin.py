@@ -9,7 +9,7 @@ sys.path.append( mymodule_dir )
 import api
 
 args = sys.argv
-if len(args) > 1:
+if len(args) > 1 or len(args) == 0:
     exit()
 if args[1] == "-h":
     print("indev")
