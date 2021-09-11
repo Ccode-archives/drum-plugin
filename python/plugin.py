@@ -7,6 +7,7 @@ home = os.path.expanduser('~')
 mymodule_dir = os.path.join( home, 'drumbash', 'api')
 sys.path.append( mymodule_dir )
 import api
+from sys import exit
 
 args = sys.argv
 if len(args) > 1 or len(args) == 0:
