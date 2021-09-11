@@ -10,6 +10,6 @@ import api
 
 args = sys.argv
 if len(args) > 1 or len(args) == 0:
-    exit()
+    sys.exit()
 if args[1] == "-h":
     print("indev")
