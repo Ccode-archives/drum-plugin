@@ -8,5 +8,8 @@ mymodule_dir = os.path.join( home, 'drumbash', 'api')
 sys.path.append( mymodule_dir )
 import api
 
-# replace the code below with your own code
-print(api.drumver())
+args = sys.argv
+if len(args) > 1:
+    exit()
+if args[1] == "-h":
+    print("indev")
