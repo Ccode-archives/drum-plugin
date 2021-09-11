@@ -11,6 +11,6 @@ from sys import exit
 
 args = sys.argv
 if len(args) > 1 or len(args) == 0:
-    sys.exit()
+    exit()
 if args[1] == "-h":
     print("indev")
