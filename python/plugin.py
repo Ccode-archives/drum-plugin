@@ -10,7 +10,12 @@ import api
 from sys import exit
 
 args = sys.argv
-if len(args) > 1 or len(args) == 0:
-    exit()
-if args[1] == "-h":
-    print("indev")
+try:
+    if args[1] == "-h":
+        print("indev")
+    elif args[1] == "-v":
+        print(api.drumver())
+    else:
+        print("try using -h")
+except:
+    print("error")
